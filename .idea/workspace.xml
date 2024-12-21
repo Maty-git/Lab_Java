@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="363fbeba-1638-4b5a-b181-05dff7e2d9e7" name="Changes" comment="haciendo board y su constructor">
-      <change afterPath="$PROJECT_DIR$/src/main/java/conecta4/juego/Pieza.java" afterDir="false" />
+    <list default="true" id="363fbeba-1638-4b5a-b181-05dff7e2d9e7" name="Changes" comment="creando objeto pieza">
+      <change afterPath="$PROJECT_DIR$/src/main/java/conecta4/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/conecta4/juego/Tableroc4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/MainC4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/juego/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/juego/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/juego/MenuInicio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/juego/Pieza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/juego/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/juego/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +29,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -74,12 +83,21 @@
       <option name="project" value="LOCAL" />
       <updated>1734403852591</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="creando objeto pieza">
+      <option name="closed" value="true" />
+      <created>1734576128254</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1734576128254</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="primer comit de prueba" />
     <MESSAGE value="haciendo board y su constructor" />
-    <option name="LAST_COMMIT_MESSAGE" value="haciendo board y su constructor" />
+    <MESSAGE value="creando objeto pieza" />
+    <option name="LAST_COMMIT_MESSAGE" value="creando objeto pieza" />
   </component>
 </project>

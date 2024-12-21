@@ -1,18 +1,12 @@
 package conecta4.juego;
-import java.util.ArrayList;
-import java.util.List;
-public class Board {
-    private List<List<Character>> board;
 
-    public Board(int rows, int cols) {
-        board = new ArrayList<>(rows);
+public interface Board {
+    public boolean canPlay();
 
-        for (int i = 0; i < rows; i++) {
-            List<Character> row = new ArrayList<>(cols);
-            for (int j = 0; j < cols; j++) {
-                row.add('_');
-            }
-            board.add(row);
-        }
-    }
+    public void ponerPieza(int columna, char carac);
+
+    public void vertical();
+    public void horizontal();
+    public void diagonal();
+    public void quienGana();
 }
