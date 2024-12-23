@@ -41,4 +41,6 @@ public class Player {
     public char getPieza() {
         return pieza;
     }
+
+
 }

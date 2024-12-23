@@ -5,8 +5,8 @@ public interface Board {
 
     public void ponerPieza(int columna, char carac);
 
-    public void vertical();
-    public void horizontal();
+    public char vertical();
+    public char horizontal();
     public void diagonal();
     public void quienGana();
 }
