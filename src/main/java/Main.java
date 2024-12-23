@@ -72,8 +72,8 @@ public class Main {
                     int column = scann.nextInt();
                     game.getTablero().ponerPieza(column,game.getPlayer1().getPieza());
                     System.out.println(game.getTablero().toString());
-                    if(game.getTablero().horizontal() != 0){
-                        System.out.println(game.getTablero().horizontal());
+                    if(game.getTablero().quienGana() != 0){
+                        System.out.println(game.getTablero().quienGana());
                     }
                     break;
                 case "4":

@@ -7,6 +7,6 @@ public interface Board {
 
     public char vertical();
     public char horizontal();
-    public void diagonal();
-    public void quienGana();
+    public char diagonal();
+    public char quienGana();
 }

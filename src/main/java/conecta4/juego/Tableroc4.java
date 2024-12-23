@@ -101,12 +101,66 @@ public class Tableroc4 implements Board {
     }
 
     @Override
-    public void diagonal() {
+    public char diagonal() {
+        char car,car2,car3,car4;
+
+        for(int i = 0; i <= 2; i++ ){
+            List<Character> fila = tablero.get(i);
+            List<Character> fila2 = tablero.get(i+1);
+            List<Character> fila3 = tablero.get(i+2);
+            List<Character> fila4 = tablero.get(i+3);
+            for(int j = 0; j <= 3; j++){
+                car = fila.get(j);
+                car2 = fila2.get(j+1);
+                car3 = fila3.get(j+2);
+                car4 = fila4.get(j+3);
+                if((car == car2 && car2 == car3 && car3 == car4) && car != '_'){
+                    return car;
+                }
+            }
+        }
+        for(int i = 0; i <=2; i++){
+            List<Character> fila = tablero.get(i);
+            List<Character> fila2 = tablero.get(i+1);
+            List<Character> fila3 = tablero.get(i+2);
+            List<Character> fila4 = tablero.get(i+3);
+            for (int j = 6; j>=3 ; j--){
+                car = fila.get(j);
+                car2 = fila2.get(j-1);
+                car3 = fila3.get(j-2);
+                car4 = fila4.get(j-3);
+                if((car == car2 && car2 == car3 && car3 == car4) && car != '_'){
+                    return car;
+                }
+            }
+        }
+        car = '0';
+        return car;
     }
 
     @Override
-    public void quienGana() {
+    public char quienGana() {
+        // Verificar ganador vertical
+        char ganadorV = vertical();
+        if (ganadorV != '0') {
+            return ganadorV;
+        }
 
+        // Verificar ganador horizontal
+        char ganadorH = horizontal();
+        if (ganadorH != '0') {
+            return ganadorH;
+        }
+
+        // Verificar ganador diagonal
+        char ganadorD = diagonal();
+        if (ganadorD != '0') {
+            return ganadorD;
+        }
+
+        // Si no hay ganador, devolver '0'
+        return '0';
     }
+
 
 }

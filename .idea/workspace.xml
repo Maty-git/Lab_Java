@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="363fbeba-1638-4b5a-b181-05dff7e2d9e7" name="Changes" comment="avanzando cambiando la logica y haciendo algunas funciones">
+    <list default="true" id="363fbeba-1638-4b5a-b181-05dff7e2d9e7" name="Changes" comment="avanzando en metodos para verificar victorias vertical y horizontal">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/juego/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/juego/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/juego/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/juego/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/juego/Tableroc4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/juego/Tableroc4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +94,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734749525639</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="avanzando en metodos para verificar victorias vertical y horizontal">
+      <option name="closed" value="true" />
+      <created>1734922030129</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1734922030129</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -102,6 +110,7 @@
     <MESSAGE value="haciendo board y su constructor" />
     <MESSAGE value="creando objeto pieza" />
     <MESSAGE value="avanzando cambiando la logica y haciendo algunas funciones" />
-    <option name="LAST_COMMIT_MESSAGE" value="avanzando cambiando la logica y haciendo algunas funciones" />
+    <MESSAGE value="avanzando en metodos para verificar victorias vertical y horizontal" />
+    <option name="LAST_COMMIT_MESSAGE" value="avanzando en metodos para verificar victorias vertical y horizontal" />
   </component>
 </project>

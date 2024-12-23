@@ -8,6 +8,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Game {
+
+
     private List<String> historial;
     private int turnoActual;
     private Player player1;
@@ -46,5 +48,29 @@ public class Game {
 
     public Player getPlayer2() {
         return player2;
+    }
+
+    public List<String> getHistorial() {
+        return historial;
+    }
+
+    public void addHistorial(int columna, String color){
+        String text = "Se Coloca La Ficha " +  color + " En Columna " + columna;
+        historial.add(text);
+    }
+
+    public boolean esEmpate(){
+
+        if(!tablero.canPlay() && player1.getPieza() == 0 && player2.getPieza() == 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public void actualizarStats(char ganador){
+        if(ganador == player1.getPieza()){
+
+        }
     }
 }
