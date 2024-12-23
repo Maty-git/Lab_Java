@@ -157,7 +157,6 @@ public class Tableroc4 implements Board {
         if (ganadorD != '0') {
             return ganadorD;
         }
-
         // Si no hay ganador, devolver '0'
         return '0';
     }

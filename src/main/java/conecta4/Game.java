@@ -65,8 +65,7 @@ public class Game {
     }
 
     public boolean esEmpate() {
-
-        if (!tablero.canPlay() && player1.getFichas() == 0 && player2.getFichas() == 0) {
+        if (!tablero.canPlay() || (player1.getFichas() == 0 && player2.getFichas() == 0)) {
             return true;
         } else {
             return false;
@@ -87,7 +86,7 @@ public class Game {
     }
 
     public int jugadorActual() {
-        return (this.turnoActual % 2 == 0) ? 1 : 2;
+        return (getTurnoActual() % 2 == 0) ? 1 : 2;
     }
 
     public void mostrarTablero() {
@@ -125,15 +124,13 @@ public class Game {
                 System.out.println("A el jugador no le quedan fichas");
             }
         }
-
-        if(tablero.quienGana() !=0){
-
+        char car = tablero.quienGana();
+        if(car != '0' || esEmpate()){
+            endGame(car);
+        }else {
+            setTurnoActual(getTurnoActual() + 1 );
         }
-        //despues deve de jugar
-        //despues deve de restar una ficha
-        //restar las fichas a el jugador
-        //revisar si se termino la partida y si es asi terminarla
-        //si no entonces solo sigue
+
     }
 
     public boolean isEstaJugando() {
@@ -143,5 +140,13 @@ public class Game {
 
     public void setEstaJugando(boolean estaJugando) {
         this.estaJugando = estaJugando;
+    }
+
+    public int getTurnoActual() {
+        return turnoActual;
+    }
+
+    public void setTurnoActual(int turnoActual) {
+        this.turnoActual = turnoActual;
     }
 }

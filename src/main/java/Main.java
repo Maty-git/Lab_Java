@@ -27,6 +27,7 @@ public class Main {
                 case "2":
                     //mostrar estado
 
+
                     break;
                 case "3":
                     //jugar
@@ -63,16 +64,11 @@ public class Main {
                     break;
                 case "2":
                     //mostrar estado
-
+                    System.out.println(game.getTablero().toString());
                     break;
                 case "3":
                     //jugar
-
-
-                    System.out.println(game.getTablero().toString());
-                    if(game.getTablero().quienGana() != 0){
-                        System.out.println(game.getTablero().quienGana());
-                    }
+                    game.realizarMovimiento();
                     break;
                 case "4":
                     //ver stats
