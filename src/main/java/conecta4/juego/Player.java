@@ -42,5 +42,25 @@ public class Player {
         return pieza;
     }
 
+    public void sumarVictoria(){
+        this.victoria = this.victoria + 1;
+    }
+    public void sumarDerrota(){
+        this.derrota = this.derrota +1;
+    }
+    public void sumarEmpate(){
+        this.empate = this.empate +1;
+    }
 
+    public int getId() {
+        return id;
+    }
+
+    public void restarFicha(){
+        this.fichas = this.fichas -1;
+    }
+
+    public int getFichas() {
+        return fichas;
+    }
 }

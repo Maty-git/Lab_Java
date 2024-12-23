@@ -6,8 +6,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         String opcion = "";
-        boolean estaJugando = true;
-        boolean juegoCreado = false;
+
 
         Game game = null;
         while(!opcion.equals("1") || opcion.equals("5")){
@@ -23,7 +22,6 @@ public class Main {
             switch (opcion){
                 case "1":
                     game = new Game();
-                    juegoCreado = true;
 
                     break;
                 case "2":
@@ -37,7 +35,10 @@ public class Main {
                     //ver stats
                     break;
                 case "5":
-                    estaJugando = false;
+                    if(game == null){
+                        game = new Game(false);
+                    }
+                    game.setEstaJugando(false);
                     break;
                 default:
                     System.out.println("Entrada Invalida");
@@ -45,7 +46,7 @@ public class Main {
             }
         }
 
-        while(estaJugando){
+        while(game.isEstaJugando()){
             Scanner scann = new Scanner(System.in);
             System.out.println("********** BIENVENIDO A CONECTA 4 ***************\n");
             System.out.println("SELECCIONE UNA OPCION:\n");
@@ -57,9 +58,7 @@ public class Main {
             opcion = scann.nextLine();
             switch (opcion) {
                 case "1":
-                    if(juegoCreado){
-                        System.out.println("ya existe un juego en curso");
-                    }
+                    System.out.println("ya existe un juego en curso");
 
                     break;
                 case "2":
@@ -68,9 +67,8 @@ public class Main {
                     break;
                 case "3":
                     //jugar
-                    System.out.println("Ingresa La columna En la que ira la ficha:");
-                    int column = scann.nextInt();
-                    game.getTablero().ponerPieza(column,game.getPlayer1().getPieza());
+
+
                     System.out.println(game.getTablero().toString());
                     if(game.getTablero().quienGana() != 0){
                         System.out.println(game.getTablero().quienGana());
@@ -80,7 +78,7 @@ public class Main {
                     //ver stats
                     break;
                 case "5":
-                    estaJugando = false;
+                    game.setEstaJugando(false);
                     break;
                 default:
                     System.out.println("Entrada Invalida");
