@@ -24,7 +24,7 @@ public class Game {
         this.player1 = new Player(1, 0, 0, 0, 21);
         System.out.println("******* Creando Jugador 2 *******");
         this.player2 = new Player(2, 0, 0, 0, 21);
-        System.out.println("Defina El Numero De Fichas: ");
+        System.out.println("Defina El Numero De Fichas (4-21): ");
         int fichas = scanner.nextInt();
         player1.setFichas(fichas);
         player2.setFichas(fichas);
@@ -65,21 +65,20 @@ public class Game {
     }
 
     public boolean esEmpate() {
-        if (!tablero.canPlay() || (player1.getFichas() == 0 && player2.getFichas() == 0)) {
-            return true;
-        } else {
-            return false;
-        }
+        return !tablero.canPlay() || (player1.getFichas() == 0 && player2.getFichas() == 0);
     }
 
     public void actualizarStats(char ganador) {
         if (ganador == player1.getPieza()) {
+            System.out.println("!! Player 1 a Ganado !!");
             player1.sumarVictoria();
             player2.sumarDerrota();
         } else if (ganador == player2.getPieza()) {
+            System.out.println("!! Player 2 a Ganado !!");
             player2.sumarVictoria();
             player1.sumarDerrota();
         } else {
+            System.out.println("Es un Empate");
             player1.sumarEmpate();
             player2.sumarEmpate();
         }
@@ -96,7 +95,7 @@ public class Game {
 
     public void endGame(char ganador){
         actualizarStats(ganador);
-        setEstaJugando(false);
+        System.out.println(getHistorial());
     }
 
     public void realizarMovimiento(){
@@ -111,6 +110,7 @@ public class Game {
                 int column = scann.nextInt();
                 tablero.ponerPieza(column,player1.getPieza());
                 player1.restarFicha();
+                addHistorial(column,player1.getColor());
             }else {
                 System.out.println("A el jugador no le quedan fichas");
             }
@@ -120,6 +120,7 @@ public class Game {
                 int column = scann.nextInt();
                 tablero.ponerPieza(column,player2.getPieza());
                 player2.restarFicha();
+                addHistorial(column,player2.getColor());
             }else {
                 System.out.println("A el jugador no le quedan fichas");
             }
@@ -149,4 +150,5 @@ public class Game {
     public void setTurnoActual(int turnoActual) {
         this.turnoActual = turnoActual;
     }
+
 }

@@ -9,7 +9,7 @@ public class Main {
 
 
         Game game = null;
-        while(!opcion.equals("1") || opcion.equals("5")){
+        while(!opcion.equals("1")){
             Scanner scann = new Scanner(System.in);
             System.out.println("********** BIENVENIDO A CONECTA 4 ***************\n");
             System.out.println("SELECCIONE UNA OPCION:\n");
@@ -22,24 +22,23 @@ public class Main {
             switch (opcion){
                 case "1":
                     game = new Game();
-
                     break;
                 case "2":
                     //mostrar estado
-
-
+                    System.out.println("NO SE PUEDE MOSTRAR EL ESTADO DEL JUEGO PORQUE AUN NO A SIDO CREADO \n PRESIONE LA OPCION 1 PARA CREAR UN NUEVO JUEGO");
                     break;
                 case "3":
                     //jugar
+                    System.out.println("NO SE PUEDE JUGAR, EL JUEGO AUN NO A SIDO CREADO \n PRESIONE LA OPCION 1 PARA CREAR UN NUEVO JUEGO");
                     break;
                 case "4":
                     //ver stats
+                    System.out.println("NO SE PUEDEN VER LAS ESTADISTICAS, EL JUEGO AUN NO SE A CREADO \n PRESIONE LA OPCION 1 PARA CREAR UN NUEVO JUEGO");
                     break;
                 case "5":
-                    if(game == null){
-                        game = new Game(false);
-                    }
+                    game = new Game(false);
                     game.setEstaJugando(false);
+                    opcion = "1";
                     break;
                 default:
                     System.out.println("Entrada Invalida");
@@ -59,12 +58,12 @@ public class Main {
             opcion = scann.nextLine();
             switch (opcion) {
                 case "1":
-                    System.out.println("ya existe un juego en curso");
-
+                    System.out.println("ya existe un juego en curso finalice el juego para poder volver a jugar");
                     break;
                 case "2":
                     //mostrar estado
-                    System.out.println(game.getTablero().toString());
+                    System.out.println("***** TABLERO ACTUAL *****");
+                    game.mostrarTablero();
                     break;
                 case "3":
                     //jugar
@@ -72,6 +71,13 @@ public class Main {
                     break;
                 case "4":
                     //ver stats
+                    String stats =
+                            "***** Estadisticas Actuales *****\n" +
+                            "Player 1: \n" +
+                            game.getPlayer1().getNombre() + " Color: " + game.getPlayer1().getColor() + " " + game.getPlayer1().getStats() + "\n" +
+                            "Player 2: \n" +
+                            game.getPlayer2().getNombre() + "Color: " + game.getPlayer2().getColor() + " " + game.getPlayer2().getStats();
+                    System.out.println(stats);
                     break;
                 case "5":
                     game.setEstaJugando(false);

@@ -49,16 +49,19 @@ public class Tableroc4 implements Board {
 
     @Override
     public void ponerPieza(int columna, char carac) {
+        boolean logrado = false;
         columna = columna -1;
         for(int i = 5 ; i > -1 ; i--){
             List<Character> fila = tablero.get(i);
             if(fila.get(columna).equals('_')){
                 fila.set(columna, carac);
-                i = -1;
+                logrado = true;
                 break;
             }
         }
-        System.out.println("No Se Puede Jugar En Esta Columna");
+        if(!logrado){
+            System.out.println("No Se Puede Jugar En Esta Columna");
+        }
     }
 
     @Override
@@ -153,12 +156,8 @@ public class Tableroc4 implements Board {
         }
 
         // Verificar ganador diagonal
-        char ganadorD = diagonal();
-        if (ganadorD != '0') {
-            return ganadorD;
-        }
+        return diagonal();
         // Si no hay ganador, devolver '0'
-        return '0';
     }
 
 

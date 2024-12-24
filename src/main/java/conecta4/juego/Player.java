@@ -17,8 +17,12 @@ public class Player {
         this.id = nId;
         System.out.println("Ingrese El Nombre Del Jugador "+ nId + " :");
         this.nombre = scanner.nextLine();
-        System.out.println("Ingrese El Color Del Jugador "+ nId + " :");
-        this.color = scanner.nextLine();
+        if(nId == 1){
+            this.color = "Rojo";
+        }else{
+            this.color = "Amarillo";
+        }
+        System.out.println("Color Asignado: " + color);
         this.victoria = nVictoria;
         this.derrota = nDerrota;
         this.empate = nEmpate;
@@ -62,5 +66,16 @@ public class Player {
 
     public int getFichas() {
         return fichas;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getColor() {
+        return color;
+    }
+    public String getStats(){
+        return "Victorias: " + victoria + " Derrotas: " + derrota+ " Empates: " + empate + " Fichas restantes: "+ fichas;
     }
 }
