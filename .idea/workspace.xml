@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="363fbeba-1638-4b5a-b181-05dff7e2d9e7" name="Changes" comment="termine el juego de aqui en mas seran reviciones para mejorarlo">
+    <list default="true" id="363fbeba-1638-4b5a-b181-05dff7e2d9e7" name="Changes" comment="mejorando la logica del juego y jugabilidad">
+      <change afterPath="$PROJECT_DIR$/src/main/java/conecta4/juego/interfaces/Gameinterfaz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/conecta4/juego/interfaces/Playerinterfaz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/juego/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/juego/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/juego/Board.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/juego/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/juego/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/juego/Tableroc4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/juego/Tableroc4.java" afterDir="false" />
     </list>
@@ -25,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -44,6 +47,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Gradle.Build proyecto.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.proyecto [:Main.main()].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
@@ -51,9 +55,16 @@
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="conecta4.juego.interfaces" />
+      <recent name="conecta4" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -127,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734995222835</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="mejorando la logica del juego y jugabilidad">
+      <option name="closed" value="true" />
+      <created>1735070643501</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1735070643501</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -139,6 +158,7 @@
     <MESSAGE value="avanzando con algunas funciones del game" />
     <MESSAGE value="terminando los metodos del game" />
     <MESSAGE value="termine el juego de aqui en mas seran reviciones para mejorarlo" />
-    <option name="LAST_COMMIT_MESSAGE" value="termine el juego de aqui en mas seran reviciones para mejorarlo" />
+    <MESSAGE value="mejorando la logica del juego y jugabilidad" />
+    <option name="LAST_COMMIT_MESSAGE" value="mejorando la logica del juego y jugabilidad" />
   </component>
 </project>
