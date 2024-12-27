@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="363fbeba-1638-4b5a-b181-05dff7e2d9e7" name="Changes" comment="comentando el codigo y afinando detalles">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/conecta4/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/conecta4/juego/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/conecta4/juego/Tableroc4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/conecta4/juego/interfaces/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/conecta4/juego/interfaces/Gameinterfaz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/conecta4/juego/interfaces/Playerinterfaz.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2qH6FxEMSIjhlHDrP5ESdVzXteZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build proyecto.executor": "Run",
+    "Gradle.proyecto [:Main.main()].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="conecta4.juego.interfaces" />
+      <recent name="conecta4" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="363fbeba-1638-4b5a-b181-05dff7e2d9e7" name="Changes" comment="" />
+      <created>1734307060726</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734307060726</updated>
+    </task>
+    <task id="LOCAL-00001" summary="primer comit de prueba">
+      <option name="closed" value="true" />
+      <created>1734314365537</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734314365537</updated>
+    </task>
+    <task id="LOCAL-00002" summary="haciendo board y su constructor">
+      <option name="closed" value="true" />
+      <created>1734403852591</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734403852591</updated>
+    </task>
+    <task id="LOCAL-00003" summary="creando objeto pieza">
+      <option name="closed" value="true" />
+      <created>1734576128254</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1734576128254</updated>
+    </task>
+    <task id="LOCAL-00004" summary="avanzando cambiando la logica y haciendo algunas funciones">
+      <option name="closed" value="true" />
+      <created>1734749525639</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1734749525639</updated>
+    </task>
+    <task id="LOCAL-00005" summary="avanzando en metodos para verificar victorias vertical y horizontal">
+      <option name="closed" value="true" />
+      <created>1734922030129</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1734922030129</updated>
+    </task>
+    <task id="LOCAL-00006" summary="avanzando con algunas funciones del game">
+      <option name="closed" value="true" />
+      <created>1734927737639</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1734927737639</updated>
+    </task>
+    <task id="LOCAL-00007" summary="terminando los metodos del game">
+      <option name="closed" value="true" />
+      <created>1734984198128</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1734984198128</updated>
+    </task>
+    <task id="LOCAL-00008" summary="termine el juego de aqui en mas seran reviciones para mejorarlo">
+      <option name="closed" value="true" />
+      <created>1734995222835</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1734995222835</updated>
+    </task>
+    <task id="LOCAL-00009" summary="mejorando la logica del juego y jugabilidad">
+      <option name="closed" value="true" />
+      <created>1735070643501</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1735070643501</updated>
+    </task>
+    <task id="LOCAL-00010" summary="comentando el codigo y afinando detalles">
+      <option name="closed" value="true" />
+      <created>1735244914228</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1735244914228</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="primer comit de prueba" />
+    <MESSAGE value="haciendo board y su constructor" />
+    <MESSAGE value="creando objeto pieza" />
+    <MESSAGE value="avanzando cambiando la logica y haciendo algunas funciones" />
+    <MESSAGE value="avanzando en metodos para verificar victorias vertical y horizontal" />
+    <MESSAGE value="avanzando con algunas funciones del game" />
+    <MESSAGE value="terminando los metodos del game" />
+    <MESSAGE value="termine el juego de aqui en mas seran reviciones para mejorarlo" />
+    <MESSAGE value="mejorando la logica del juego y jugabilidad" />
+    <MESSAGE value="comentando el codigo y afinando detalles" />
+    <option name="LAST_COMMIT_MESSAGE" value="comentando el codigo y afinando detalles" />
+  </component>
+</project>
